@@ -1,0 +1,29 @@
+{
+  "name": "ai-model-personalities",
+  "version": "1.0.0",
+  "description": "AI Model Personalities showcase and TygartMedia infrastructure management",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "cd src && wrangler dev",
+    "deploy": "cd src && wrangler publish",
+    "deploy:cloudflare": "./deploy.sh",
+    "test:wordpress": "find wordpress/themes -name '*.php' -exec php -l {} \\;",
+    "test:security": "grep -r 'eval(' --include='*.php' wordpress/ || echo 'No security issues found'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willtygart/ai-model-personalities.git"
+  },
+  "keywords": [
+    "ai",
+    "cloudflare-workers",
+    "wordpress",
+    "github-actions",
+    "tygartmedia"
+  ],
+  "author": "TygartMedia",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

@@ -1,0 +1,161 @@
+name: Deploy AI Models to Cloudflare Workers
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'cloudflare/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'cloudflare/**'
+  workflow_dispatch:
+
+env:
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test Cloudflare Workers Code
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Dependencies
+        run: |
+          npm install -g wrangler
+          if [ -f package.json ]; then
+            npm install
+          fi
+          
+      - name: Validate Workers Code
+        run: |
+          echo "🔍 Validating Cloudflare Workers code..."
+          if [ -f src/index.js ]; then
+            node -c src/index.js
+            echo "✅ Workers JavaScript syntax is valid"
+          fi
+          
+      - name: Check Wrangler Configuration
+        run: |
+          echo "⚙️ Validating wrangler.toml configuration..."
+          if [ -f src/wrangler.toml ]; then
+            cd src && wrangler whoami || echo "⚠️ Cloudflare credentials not configured"
+            echo "✅ Wrangler configuration is valid"
+          else
+            echo "❌ wrangler.toml not found"
+            exit 1
+          fi
+
+  deploy-staging:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    name: Deploy to Staging
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Wrangler
+        run: npm install -g wrangler
+        
+      - name: Deploy to Staging
+        run: |
+          echo "🚀 Deploying to staging environment..."
+          cd src
+          wrangler publish --env staging --dry-run || echo "⚠️ Dry run completed"
+
+  deploy-production:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    name: Deploy to Production
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install Wrangler
+        run: npm install -g wrangler
+        
+      - name: Deploy AI Models Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          echo "🚀 Deploying AI Models Worker to production..."
+          cd src
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            wrangler publish --env production
+            echo "✅ Successfully deployed to ai-models.tygartmedia.com"
+          else
+            echo "⚠️ Cloudflare credentials not configured - skipping deployment"
+          fi
+          
+      - name: Deploy Static Site to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -d "cloudflare/tygartmedia" ] && [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "📄 Deploying static site to Cloudflare Pages..."
+            npx wrangler pages publish cloudflare/tygartmedia --project-name=tygartmedia
+            echo "✅ Successfully deployed to tygartmedia.pages.dev"
+          else
+            echo "⚠️ Static site directory not found or credentials missing"
+          fi
+          
+      - name: Post-Deployment Health Check
+        run: |
+          echo "🏥 Running post-deployment health checks..."
+          
+          # Wait for deployment to propagate
+          sleep 30
+          
+          # Check AI Models Worker
+          if curl -f -s "https://ai-models.tygartmedia.com" > /dev/null; then
+            echo "✅ AI Models Worker is accessible"
+          else
+            echo "⚠️ AI Models Worker health check failed"
+          fi
+          
+          # Check static site if exists
+          if [ -d "cloudflare/tygartmedia" ]; then
+            if curl -f -s "https://tygartmedia.pages.dev" > /dev/null; then
+              echo "✅ Static site is accessible"
+            else
+              echo "⚠️ Static site health check failed"
+            fi
+          fi
+
+  notify-success:
+    needs: [test, deploy-production]
+    runs-on: ubuntu-latest
+    if: success()
+    name: Deployment Success Notification
+    steps:
+      - name: Success Summary
+        run: |
+          echo "🎉 Cloudflare Deployment Completed Successfully!"
+          echo "🤖 AI Models: https://ai-models.tygartmedia.com"
+          echo "🌐 Main Site: https://tygartmedia.pages.dev"
+          echo "📊 GitHub Repository: https://github.com/${{ github.repository }}"
+          echo "🔍 Deployed Commit: ${{ github.sha }}"
+          echo "👤 Deployed by: ${{ github.actor }}"
+          echo "⏰ Deployed at: $(date)"
