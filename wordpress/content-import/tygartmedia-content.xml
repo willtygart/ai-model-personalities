@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+	<title>TygartMedia</title>
+	<description>Digital Solutions & Content Strategy</description>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://wordpress.tygartmedia.com</wp:base_site_url>
+	<wp:base_blog_url>https://wordpress.tygartmedia.com</wp:base_blog_url>
+
+	<!-- MAIN PAGES -->
+	
+	<!-- HOME PAGE -->
+	<item>
+		<title>Home</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>home</wp:post_name>
+		<content:encoded><![CDATA[
+		<div class="hero-section">
+			<h1>Turn Your Business Ideas Into Profitable Digital Solutions</h1>
+			<p class="lead">AI automation, custom web development, and growth strategies for ambitious business owners</p>
+			<div class="cta-buttons">
+				<a href="/contact" class="btn-primary">Book a Strategy Call</a>
+				<a href="/case-studies" class="btn-secondary">View Our Work</a>
+			</div>
+		</div>
+
+		<section class="services-preview">
+			<h2>How We Help You Grow</h2>
+			<div class="services-grid">
+				<div class="service-card">
+					<h3>AI & Automation Solutions</h3>
+					<p>Custom AI tools and automated workflows that save time and increase profits</p>
+					<a href="/services/ai-automation">Learn More</a>
+				</div>
+				<div class="service-card">
+					<h3>Web Development</h3>
+					<p>Fast, secure WordPress sites on Google Cloud that convert visitors to customers</p>
+					<a href="/services/web-development">Learn More</a>
+				</div>
+				<div class="service-card">
+					<h3>Business Growth Consulting</h3>
+					<p>Strategic guidance to scale your business with modern technology and systems</p>
+					<a href="/services/consulting">Learn More</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="recent-posts">
+			<h2>Latest Insights</h2>
+			[recent_posts count="3"]
+		</section>
+
+		<section class="social-proof">
+			<h2>Trusted by Growing Businesses</h2>
+			<div class="client-logos">
+				<div class="client">Engage Restaurant Group</div>
+				<div class="client">Upper Restoration</div>
+				<div class="client">Custom CSV Solutions</div>
+			</div>
+		</section>
+		]]></content:encoded>
+	</item>
+
+	<!-- ABOUT PAGE -->
+	<item>
+		<title>About</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>about</wp:post_name>
+		<content:encoded><![CDATA[
+		<div class="about-hero">
+			<h1>Hi, I'm Will Tygart</h1>
+			<p class="lead">I help business owners turn manual processes into automated profits using AI and modern web technology.</p>
+		</div>
+
+		<section class="story">
+			<h2>My Story</h2>
+			<p>Writing from Playacar, Mexico, where I've built TygartMedia as a fully remote digital solutions company. After years of watching businesses struggle with outdated systems and manual processes, I decided to focus on what I do best: creating custom tools and automation that actually make money.</p>
+			
+			<p>Whether it's helping a restaurant group streamline operations with AI, building custom web applications that generate passive income, or deploying WordPress sites on Google Cloud that outperform the competition, I'm passionate about practical technology solutions.</p>
+
+			<h3>What Makes TygartMedia Different</h3>
+			<ul>
+				<li><strong>Results-Focused:</strong> Every solution is built to increase revenue or decrease costs</li>
+				<li><strong>Modern Technology:</strong> Cloud-based, secure, and scalable from day one</li>
+				<li><strong>Personal Service:</strong> You work directly with me, not a team of junior developers</li>
+				<li><strong>Proven Process:</strong> Tested systems that work for businesses of all sizes</li>
+			</ul>
+		</section>
+
+		<section class="expertise">
+			<h2>Areas of Expertise</h2>
+			<div class="expertise-grid">
+				<div class="expertise-item">
+					<h3>AI Implementation</h3>
+					<p>Custom AI tools, automation workflows, and process optimization for real business results</p>
+				</div>
+				<div class="expertise-item">
+					<h3>Cloud Development</h3>
+					<p>Google Cloud Platform, WordPress deployment, and scalable web applications</p>
+				</div>
+				<div class="expertise-item">
+					<h3>Business Systems</h3>
+					<p>Workflow optimization, remote team management, and growth strategy consulting</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta">
+			<h2>Ready to Grow Your Business?</h2>
+			<p>Let's discuss how custom technology solutions can transform your operations and increase your profits.</p>
+			<a href="/contact" class="btn-primary">Schedule a Free Strategy Call</a>
+		</section>
+		]]></content:encoded>
+	</item>
+
+	<!-- SERVICES PAGES -->
+	
+	<!-- AI & Automation Services -->
+	<item>
+		<title>AI & Automation Solutions</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>ai-automation</wp:post_name>
+		<wp:post_parent>services</wp:post_parent>
+		<content:encoded><![CDATA[
+		<h1>AI & Automation Solutions</h1>
+		<p class="lead">Stop doing manually what technology can handle automatically. Custom AI tools and automated workflows that save time and increase profits.</p>
+
+		<section class="service-details">
+			<h2>What We Build</h2>
+			<div class="service-list">
+				<div class="service-item">
+					<h3>Custom AI Tools</h3>
+					<p>Specialized applications that handle your unique business processes using the latest AI technology.</p>
+					<ul>
+						<li>Data analysis and reporting automation</li>
+						<li>Customer service chatbots and workflows</li>
+						<li>Content generation and optimization</li>
+						<li>Process automation and integration</li>
+					</ul>
+				</div>
+				<div class="service-item">
+					<h3>Business Process Automation</h3>
+					<p>Turn repetitive tasks into automated systems that work 24/7.</p>
+					<ul>
+						<li>Email and communication automation</li>
+						<li>Data entry and processing workflows</li>
+						<li>Report generation and distribution</li>
+						<li>Inventory and order management</li>
+					</ul>
+				</div>
+				<div class="service-item">
+					<h3>System Integration</h3>
+					<p>Connect your existing tools and create seamless workflows.</p>
+					<ul>
+						<li>API integrations and data synchronization</li>
+						<li>Cloud migration and optimization</li>
+						<li>Third-party tool connections</li>
+						<li>Legacy system modernization</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="case-study-preview">
+			<h2>Success Stories</h2>
+			<div class="case-study">
+				<h3>Engage Restaurant Group</h3>
+				<p>"Will's automation system saved us 15 hours per week on scheduling and inventory management. Our profit margins improved by 12% in the first quarter."</p>
+				<a href="/case-studies/engage">Read Full Case Study</a>
+			</div>
+		</section>
+
+		<section class="process">
+			<h2>Our Process</h2>
+			<div class="process-steps">
+				<div class="step">
+					<h3>1. Discovery Call</h3>
+					<p>We discuss your challenges and identify automation opportunities</p>
+				</div>
+				<div class="step">
+					<h3>2. Solution Design</h3>
+					<p>Custom plan with timeline, costs, and expected ROI</p>
+				</div>
+				<div class="step">
+					<h3>3. Development</h3>
+					<p>Build and test your solution with regular progress updates</p>
+				</div>
+				<div class="step">
+					<h3>4. Launch & Support</h3>
+					<p>Deploy your solution and provide ongoing support</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta">
+			<h2>Ready to Automate Your Business?</h2>
+			<p>Schedule a free consultation to discuss your automation opportunities.</p>
+			<a href="/contact" class="btn-primary">Schedule AI Consultation</a>
+		</section>
+		]]></content:encoded>
+	</item>
+
+	<!-- Web Development Services -->
+	<item>
+		<title>Web Development</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>web-development</wp:post_name>
+		<wp:post_parent>services</wp:post_parent>
+		<content:encoded><![CDATA[
+		<h1>Custom Web Development</h1>
+		<p class="lead">Fast, secure WordPress sites on Google Cloud that convert visitors to customers and grow with your business.</p>
+
+		<section class="service-details">
+			<h2>What We Build</h2>
+			<div class="service-list">
+				<div class="service-item">
+					<h3>WordPress on Google Cloud</h3>
+					<p>Enterprise-level hosting with small business pricing.</p>
+					<ul>
+						<li>Lightning-fast loading times</li>
+						<li>Automatic scaling and security</li>
+						<li>99.9% uptime guarantee</li>
+						<li>Integrated CDN and optimization</li>
+					</ul>
+				</div>
+				<div class="service-item">
+					<h3>Custom Web Applications</h3>
+					<p>Bespoke solutions built for your specific needs.</p>
+					<ul>
+						<li>Customer portals and dashboards</li>
+						<li>E-commerce and booking systems</li>
+						<li>Membership and subscription sites</li>
+						<li>API integrations and automations</li>
+					</ul>
+				</div>
+				<div class="service-item">
+					<h3>Performance & Security</h3>
+					<p>Sites that load fast, stay secure, and rank well.</p>
+					<ul>
+						<li>Core Web Vitals optimization</li>
+						<li>Advanced security hardening</li>
+						<li>SEO and conversion optimization</li>
+						<li>Automated backups and monitoring</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="technology-stack">
+			<h2>Our Technology Stack</h2>
+			<div class="tech-grid">
+				<div class="tech-item">
+					<h3>Google Cloud Platform</h3>
+					<p>Enterprise infrastructure with cost optimization</p>
+				</div>
+				<div class="tech-item">
+					<h3>Cloudflare CDN</h3>
+					<p>Global content delivery and security</p>
+				</div>
+				<div class="tech-item">
+					<h3>WordPress</h3>
+					<p>Flexible CMS with custom themes and plugins</p>
+				</div>
+				<div class="tech-item">
+					<h3>GitHub Actions</h3>
+					<p>Automated deployments and CI/CD</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="pricing-preview">
+			<h2>Investment</h2>
+			<p>Professional websites starting at $2,500 with hosting from $25/month. Every project includes:</p>
+			<ul>
+				<li>Mobile-responsive design</li>
+				<li>SEO optimization</li>
+				<li>Content management training</li>
+				<li>30 days of support</li>
+				<li>Performance guarantees</li>
+			</ul>
+		</section>
+
+		<section class="cta">
+			<h2>Ready for a Better Website?</h2>
+			<p>Get a free quote and timeline for your project.</p>
+			<a href="/contact" class="btn-primary">Get Website Quote</a>
+		</section>
+		]]></content:encoded>
+	</item>
+
+	<!-- BLOG POSTS -->
+	
+	<!-- Welcome Post -->
+	<item>
+		<title>Welcome to TygartMedia: Our Mission and Vision</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>welcome-to-tygartmedia</wp:post_name>
+		<category domain="category" nicename="company-news"><![CDATA[Company News]]></category>
+		<content:encoded><![CDATA[
+		<p>Welcome to TygartMedia, where we transform business challenges into digital opportunities.</p>
+
+		<p>I'm Will Tygart, and I started this company with a simple belief: every business deserves access to modern technology that actually makes money, not just looks impressive in presentations.</p>
+
+		<h2>Why TygartMedia Exists</h2>
+
+		<p>After years of watching businesses struggle with outdated systems, manual processes, and websites that don't convert, I decided to focus on what really matters: <strong>results</strong>.</p>
+
+		<p>Whether you're a restaurant owner drowning in scheduling nightmares, a service business buried in paperwork, or an entrepreneur with a great idea but no technical execution, we're here to build solutions that work.</p>
+
+		<h2>What We Do Differently</h2>
+
+		<ul>
+			<li><strong>We Focus on ROI:</strong> Every tool, website, and automation we build is designed to either make you money or save you time (which is money).</li>
+			<li><strong>We Use Modern Technology:</strong> Google Cloud, AI automation, and cutting-edge web development - but explained in plain English.</li>
+			<li><strong>We Work Remotely:</strong> From Playacar, Mexico, we serve clients worldwide with lower overhead and higher value.</li>
+			<li><strong>We Think Long-term:</strong> Solutions that scale with your growth, not hold you back.</li>
+		</ul>
+
+		<h2>Our Core Services</h2>
+
+		<p><strong>AI & Automation:</strong> Custom tools that handle repetitive tasks, analyze data, and streamline operations.</p>
+
+		<p><strong>Web Development:</strong> WordPress sites on Google Cloud that load fast, convert visitors, and grow with your business.</p>
+
+		<p><strong>Business Consulting:</strong> Strategic guidance on technology adoption, process optimization, and digital transformation.</p>
+
+		<h2>Success Stories</h2>
+
+		<p>We've helped Engage Restaurant Group automate their operations, built custom tools for Upper Restoration that generated new revenue streams, and developed solutions that have saved our clients hundreds of hours and thousands of dollars.</p>
+
+		<p>Every project starts with the same question: "How will this make your business better?"</p>
+
+		<h2>What's Next</h2>
+
+		<p>This blog will be your resource for:</p>
+		<ul>
+			<li>AI and automation insights that you can actually use</li>
+			<li>Web development tips and tutorials</li>
+			<li>Business growth strategies and case studies</li>
+			<li>Behind-the-scenes looks at our projects and processes</li>
+		</ul>
+
+		<p>Ready to transform your business with technology that works? <a href="/contact">Let's talk</a>.</p>
+
+		<hr>
+
+		<p><em>This post marks the beginning of our journey together. Subscribe to our newsletter to get weekly insights on AI, automation, and business growth delivered straight to your inbox.</em></p>
+		]]></content:encoded>
+	</item>
+
+	<!-- AI Automation Post -->
+	<item>
+		<title>5 Signs Your Business Needs AI Automation (And What to Do About It)</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>5-signs-business-needs-ai-automation</wp:post_name>
+		<category domain="category" nicename="ai-automation"><![CDATA[AI & Automation]]></category>
+		<content:encoded><![CDATA[
+		<p>Every week, I talk to business owners who are drowning in manual tasks that could be automated. The frustrating part? They know technology could help, but they don't know where to start.</p>
+
+		<p>If you're spending more time on repetitive tasks than growing your business, AI automation might be exactly what you need. Here are five clear signs it's time to automate:</p>
+
+		<h2>1. You're Doing the Same Task More Than 3 Times Per Week</h2>
+
+		<p>If you find yourself copying data between systems, generating the same types of reports, or sending similar emails repeatedly, that's prime automation territory.</p>
+
+		<p><strong>Real Example:</strong> Engage Restaurant Group was manually creating weekly schedules for 45 employees across multiple locations. Now, an AI system analyzes sales data, employee availability, and labor costs to generate optimal schedules in minutes.</p>
+
+		<p><strong>What to automate:</strong></p>
+		<ul>
+			<li>Report generation and distribution</li>
+			<li>Data entry and synchronization</li>
+			<li>Email sequences and follow-ups</li>
+			<li>Inventory tracking and reordering</li>
+		</ul>
+
+		<h2>2. Your Team Complains About "Boring" Work</h2>
+
+		<p>When talented people spend their time on mindless data entry instead of strategic thinking, everyone loses. Automation frees your team to focus on high-value activities.</p>
+
+		<p><strong>The Hidden Cost:</strong> Employee turnover from boring work is expensive. Good people leave when they're not challenged.</p>
+
+		<p><strong>What to automate:</strong></p>
+		<ul>
+			<li>Data processing and cleanup</li>
+			<li>Basic customer service responses</li>
+			<li>Appointment scheduling and reminders</li>
+			<li>Invoice generation and tracking</li>
+		</ul>
+
+		<h2>3. You're Making Decisions Based on Gut Feeling Instead of Data</h2>
+
+		<p>AI excels at analyzing patterns in data that humans miss. If you have data but aren't using it for strategic decisions, automation can change that.</p>
+
+		<p><strong>Real Example:</strong> Upper Restoration now uses AI to analyze customer inquiry patterns and predict which leads are most likely to convert, improving their close rate by 23%.</p>
+
+		<p><strong>What AI can analyze:</strong></p>
+		<ul>
+			<li>Customer behavior and preferences</li>
+			<li>Sales patterns and forecasting</li>
+			<li>Marketing campaign performance</li>
+			<li>Operational efficiency metrics</li>
+		</ul>
+
+		<h2>4. Simple Mistakes Are Costing You Money</h2>
+
+		<p>Human error in data entry, scheduling, or process execution adds up fast. Automation eliminates these costly mistakes.</p>
+
+		<p><strong>Common expensive errors:</strong></p>
+		<ul>
+			<li>Double-booking appointments</li>
+			<li>Incorrect inventory counts</li>
+			<li>Missed follow-up communications</li>
+			<li>Pricing errors on quotes or invoices</li>
+		</ul>
+
+		<p>Each mistake doesn't just cost money - it damages customer relationships and your reputation.</p>
+
+		<h2>5. You Can't Scale Without Hiring More People</h2>
+
+		<p>If growing your business means hiring someone to do the same manual tasks, that's a scalability problem automation can solve.</p>
+
+		<p><strong>Think about it:</strong> What if your systems could handle 2x the volume without additional staff? That's the power of smart automation.</p>
+
+		<h2>Getting Started: The TygartMedia Approach</h2>
+
+		<p>Here's how we help businesses implement AI automation:</p>
+
+		<h3>Step 1: Process Audit</h3>
+		<p>We map your current workflows to identify automation opportunities with the highest ROI.</p>
+
+		<h3>Step 2: Quick Wins First</h3>
+		<p>Start with simple automations that show immediate results, then build toward more complex solutions.</p>
+
+		<h3>Step 3: Custom Development</h3>
+		<p>Build tools specifically for your business needs, not generic software that almost fits.</p>
+
+		<h3>Step 4: Training and Support</h3>
+		<p>Your team learns to use and maintain the new systems, ensuring long-term success.</p>
+
+		<h2>Real ROI Numbers</h2>
+
+		<p>Our automation projects typically deliver:</p>
+		<ul>
+			<li><strong>15-30 hours saved</strong> per week on manual tasks</li>
+			<li><strong>25-40% reduction</strong> in process errors</li>
+			<li><strong>200-400% ROI</strong> within the first year</li>
+			<li><strong>Improved employee satisfaction</strong> and retention</li>
+		</ul>
+
+		<h2>What's Your Next Step?</h2>
+
+		<p>If you recognized your business in any of these signs, it's time to explore automation. The best part? You don't need to revolutionize everything at once.</p>
+
+		<p>Start with one repetitive process that's costing you time or money. Automate that, see the results, then expand from there.</p>
+
+		<p><strong>Ready to get started?</strong> <a href="/contact">Schedule a free automation audit</a> where we'll identify your top three automation opportunities and show you exactly how to implement them.</p>
+
+		<hr>
+
+		<p><em>Want more automation insights? Subscribe to our weekly newsletter for practical AI and business growth tips you can implement immediately.</em></p>
+		]]></content:encoded>
+	</item>
+
+	<!-- Technical Tutorial Post -->
+	<item>
+		<title>WordPress on Google Cloud: Complete Setup Guide for Business Owners</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>wordpress-google-cloud-setup-guide</wp:post_name>
+		<category domain="category" nicename="web-development"><![CDATA[Web Development]]></category>
+		<content:encoded><![CDATA[
+		<p>Want enterprise-level website performance without enterprise-level costs? Google Cloud Platform offers small businesses access to the same infrastructure that powers Google, YouTube, and Gmail.</p>
+
+		<p>This guide will show you exactly how to deploy WordPress on Google Cloud, optimize it for performance, and set up automated backups - all while staying within budget.</p>
+
+		<h2>Why Google Cloud for WordPress?</h2>
+
+		<p>After deploying dozens of WordPress sites on various platforms, Google Cloud consistently delivers the best combination of performance, security, and cost-effectiveness.</p>
+
+		<p><strong>Key Benefits:</strong></p>
+		<ul>
+			<li><strong>Performance:</strong> Google's Premium Tier network routes traffic through their private backbone</li>
+			<li><strong>Security:</strong> Built-in DDoS protection and advanced security features</li>
+			<li><strong>Scalability:</strong> Handle traffic spikes automatically without downtime</li>
+			<li><strong>Cost:</strong> Pay only for resources you use, with generous free tier</li>
+		</ul>
+
+		<h2>Prerequisites</h2>
+
+		<p>Before we start, you'll need:</p>
+		<ul>
+			<li>Google Cloud account with billing enabled</li>
+			<li>Domain name (we'll use Cloudflare for DNS)</li>
+			<li>Basic familiarity with web hosting concepts</li>
+			<li>About 30 minutes to complete the setup</li>
+		</ul>
+
+		<h2>Step 1: Create Your Google Cloud Project</h2>
+
+		<p>Log into the Google Cloud Console and create a new project:</p>
+		<ol>
+			<li>Go to console.cloud.google.com</li>
+			<li>Click "New Project"</li>
+			<li>Name it something like "yourcompany-wordpress"</li>
+			<li>Note your Project ID - you'll need this later</li>
+		</ol>
+
+		<h2>Step 2: Enable Required APIs</h2>
+
+		<p>Navigate to "APIs & Services" > "Library" and enable:</p>
+		<ul>
+			<li>Compute Engine API</li>
+			<li>Cloud SQL Admin API</li>
+			<li>Cloud Storage API</li>
+		</ul>
+
+		<p>These APIs handle virtual machines, databases, and file storage respectively.</p>
+
+		<h2>Step 3: Deploy WordPress (The Easy Way)</h2>
+
+		<p>Google Cloud Marketplace makes WordPress deployment incredibly simple:</p>
+
+		<ol>
+			<li>Go to "Marketplace" in the Cloud Console</li>
+			<li>Search for "WordPress Certified by Bitnami"</li>
+			<li>Click "Launch"</li>
+			<li>Configure your deployment:
+				<ul>
+					<li><strong>Zone:</strong> Choose closest to your users (us-central1-a for USA)</li>
+					<li><strong>Machine type:</strong> e2-micro for small sites (free tier eligible)</li>
+					<li><strong>Boot disk:</strong> 30GB standard persistent disk</li>
+					<li><strong>Firewall:</strong> Allow HTTP and HTTPS traffic</li>
+				</ul>
+			</li>
+		</ol>
+
+		<p>Click "Deploy" and wait 3-5 minutes for your WordPress site to be ready.</p>
+
+		<h2>Step 4: Secure Your Installation</h2>
+
+		<p>Once deployment is complete, you'll see your site's external IP address. Before configuring your domain, secure the installation:</p>
+
+		<h3>Access WordPress Admin</h3>
+		<ol>
+			<li>SSH into your instance (click "SSH" in the Compute Engine console)</li>
+			<li>Run: <code>sudo cat /home/bitnami/bitnami_credentials</code></li>
+			<li>Note the admin username and password</li>
+		</ol>
+
+		<h3>Essential Security Steps</h3>
+		<ol>
+			<li>Change the default admin password</li>
+			<li>Install Wordfence security plugin</li>
+			<li>Update WordPress core and all plugins</li>
+			<li>Remove unused themes and plugins</li>
+		</ol>
+
+		<h2>Step 5: Configure Cloudflare DNS</h2>
+
+		<p>Cloudflare provides free CDN and security features that work perfectly with Google Cloud:</p>
+
+		<ol>
+			<li>Add your domain to Cloudflare</li>
+			<li>Create an A record pointing to your Google Cloud instance IP</li>
+			<li>Set SSL/TLS mode to "Full (strict)"</li>
+			<li>Enable "Always Use HTTPS"</li>
+		</ol>
+
+		<h2>Step 6: Performance Optimization</h2>
+
+		<h3>Install Essential Plugins</h3>
+		<ul>
+			<li><strong>WP Rocket:</strong> Caching and performance optimization</li>
+			<li><strong>WP-Stateless:</strong> Offload media to Google Cloud Storage</li>
+			<li><strong>Yoast SEO:</strong> Search engine optimization</li>
+		</ul>
+
+		<h3>Google Cloud Storage for Media</h3>
+		<p>Storing images and files on Google Cloud Storage reduces server load and improves global performance:</p>
+
+		<ol>
+			<li>Create a Cloud Storage bucket</li>
+			<li>Configure WP-Stateless plugin with your bucket details</li>
+			<li>Set bucket permissions to public read</li>
+		</ol>
+
+		<h2>Step 7: Automated Backups</h2>
+
+		<p>Protect your investment with automated backups:</p>
+
+		<h3>Database Backups</h3>
+		<ol>
+			<li>Install UpdraftPlus plugin</li>
+			<li>Configure automated backups to Google Cloud Storage</li>
+			<li>Schedule daily database backups and weekly full backups</li>
+		</ol>
+
+		<h3>Instance Snapshots</h3>
+		<ol>
+			<li>In Compute Engine, create a snapshot schedule</li>
+			<li>Apply it to your WordPress instance</li>
+			<li>Retain snapshots for 30 days</li>
+		</ol>
+
+		<h2>Step 8: Monitoring and Alerts</h2>
+
+		<p>Set up monitoring to catch issues before they affect your users:</p>
+
+		<ol>
+			<li>Enable Google Cloud Monitoring</li>
+			<li>Create uptime checks for your site</li>
+			<li>Set up email alerts for downtime or high resource usage</li>
+		</ol>
+
+		<h2>Cost Optimization Tips</h2>
+
+		<p>Keep your hosting costs low with these strategies:</p>
+
+		<ul>
+			<li><strong>Use Preemptible Instances:</strong> For development/staging sites</li>
+			<li><strong>Right-size Your Instance:</strong> Start small and scale up as needed</li>
+			<li><strong>Leverage Free Tier:</strong> e2-micro instances are free up to usage limits</li>
+			<li><strong>Set Billing Alerts:</strong> Get notified before costs exceed your budget</li>
+		</ul>
+
+		<h2>Expected Costs</h2>
+
+		<p>For a typical small business WordPress site:</p>
+		<ul>
+			<li><strong>e2-micro instance:</strong> $0-5/month (free tier eligible)</li>
+			<li><strong>30GB persistent disk:</strong> ~$2/month</li>
+			<li><strong>Cloud Storage:</strong> ~$0.50/month for 10GB</li>
+			<li><strong>Network egress:</strong> ~$1-3/month</li>
+			<li><strong>Total:</strong> $3-10/month for professional hosting</li>
+		</ul>
+
+		<h2>Troubleshooting Common Issues</h2>
+
+		<h3>"Error establishing database connection"</h3>
+		<p>Usually indicates MySQL service is down. SSH into your instance and run: <code>sudo systemctl restart mysql</code></p>
+
+		<h3>Slow loading times</h3>
+		<p>Check these optimization steps:</p>
+		<ul>
+			<li>Enable caching plugin (WP Rocket)</li>
+			<li>Optimize images (compress and convert to WebP)</li>
+			<li>Use Cloudflare CDN</li>
+			<li>Minimize plugins and themes</li>
+		</ul>
+
+		<h3>SSL certificate issues</h3>
+		<p>Ensure Cloudflare SSL/TLS is set to "Full (strict)" and WordPress site URL uses HTTPS.</p>
+
+		<h2>Next Steps</h2>
+
+		<p>With WordPress running on Google Cloud, you now have:</p>
+		<ul>
+			<li>Enterprise-level hosting infrastructure</li>
+			<li>Automatic scaling capabilities</li>
+			<li>Advanced security features</li>
+			<li>Cost-effective monthly pricing</li>
+		</ul>
+
+		<p>Ready to take it further? Consider adding:</p>
+		<ul>
+			<li>Google Cloud CDN for even better performance</li>
+			<li>Load balancing for high-traffic sites</li>
+			<li>Automated CI/CD deployments with GitHub Actions</li>
+			<li>Advanced monitoring and logging</li>
+		</ul>
+
+		<h2>Need Help?</h2>
+
+		<p>Setting up WordPress on Google Cloud can be complex if you're not comfortable with cloud infrastructure. At TygartMedia, we handle the entire setup process for clients, including:</p>
+
+		<ul>
+			<li>Complete deployment and configuration</li>
+			<li>Performance optimization</li>
+			<li>Security hardening</li>
+			<li>Automated backup setup</li>
+			<li>Ongoing monitoring and maintenance</li>
+		</ul>
+
+		<p><a href="/contact">Get in touch</a> if you'd like us to handle the technical setup while you focus on growing your business.</p>
+
+		<hr>
+
+		<p><em>This guide is part of our technical tutorial series. Subscribe to our newsletter for more in-depth guides on web development, automation, and business growth.</em></p>
+		]]></content:encoded>
+	</item>
+
+	<!-- CONTACT PAGE -->
+	<item>
+		<title>Contact</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>contact</wp:post_name>
+		<content:encoded><![CDATA[
+		<h1>Ready to Transform Your Business?</h1>
+		<p class="lead">Let's discuss how custom technology solutions can automate your processes, increase your profits, and help you scale faster.</p>
+
+		<div class="contact-options">
+			<div class="contact-method">
+				<h2>Schedule a Strategy Call</h2>
+				<p>Book a free 30-minute consultation to discuss your project and get actionable advice.</p>
+				<!-- Calendly widget would go here -->
+				<a href="https://calendly.com/will-tygartmedia/strategy-call" class="btn-primary">Book Your Call</a>
+			</div>
+
+			<div class="contact-method">
+				<h2>Send a Project Inquiry</h2>
+				<p>Tell us about your project and we'll respond within 24 hours with next steps.</p>
+				
+				<form class="contact-form">
+					<div class="form-group">
+						<label for="name">Name *</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="email">Email *</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="company">Company</label>
+						<input type="text" id="company" name="company">
+					</div>
+					
+					<div class="form-group">
+						<label for="project-type">Project Type *</label>
+						<select id="project-type" name="project-type" required>
+							<option value="">Select a service</option>
+							<option value="ai-automation">AI & Automation Solutions</option>
+							<option value="web-development">Web Development</option>
+							<option value="consulting">Business Consulting</option>
+							<option value="maintenance">Website Maintenance</option>
+							<option value="other">Other / Not Sure</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="budget">Estimated Budget</label>
+						<select id="budget" name="budget">
+							<option value="">Select budget range</option>
+							<option value="under-5k">Under $5,000</option>
+							<option value="5k-10k">$5,000 - $10,000</option>
+							<option value="10k-25k">$10,000 - $25,000</option>
+							<option value="25k-plus">$25,000+</option>
+							<option value="not-sure">Not sure yet</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="timeline">Project Timeline</label>
+						<select id="timeline" name="timeline">
+							<option value="">When do you need this completed?</option>
+							<option value="asap">As soon as possible</option>
+							<option value="1-month">Within 1 month</option>
+							<option value="2-3-months">2-3 months</option>
+							<option value="flexible">Flexible timeline</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="message">Project Details *</label>
+						<textarea id="message" name="message" rows="5" placeholder="Tell us about your project, current challenges, and what success looks like for you." required></textarea>
+					</div>
+					
+					<button type="submit" class="btn-primary">Send Project Inquiry</button>
+				</form>
+			</div>
+		</div>
+
+		<section class="contact-info">
+			<h2>Other Ways to Reach Us</h2>
+			<div class="contact-details">
+				<div class="contact-item">
+					<h3>Email</h3>
+					<p><a href="mailto:will@tygartmedia.com">will@tygartmedia.com</a></p>
+				</div>
+				
+				<div class="contact-item">
+					<h3>Location</h3>
+					<p>Playacar, Quintana Roo, Mexico<br>
+					<em>Serving clients worldwide</em></p>
+				</div>
+				
+				<div class="contact-item">
+					<h3>Response Time</h3>
+					<p>We respond to all inquiries within 24 hours during business days.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="lead-magnets">
+			<h2>Free Resources</h2>
+			<p>Get actionable insights while you're thinking about your project:</p>
+			
+			<div class="resources-grid">
+				<div class="resource">
+					<h3>Business Automation Checklist</h3>
+					<p>Identify which processes in your business are prime for automation</p>
+					<a href="/resources/automation-checklist" class="btn-secondary">Download Free</a>
+				</div>
+				
+				<div class="resource">
+					<h3>AI Tool Comparison Guide</h3>
+					<p>Compare the top AI tools for business and find the right fit for your needs</p>
+					<a href="/resources/ai-tool-guide" class="btn-secondary">Get Guide</a>
+				</div>
+				
+				<div class="resource">
+					<h3>WordPress Security Workbook</h3>
+					<p>Complete checklist to secure your WordPress site and prevent attacks</p>
+					<a href="/resources/wordpress-security" class="btn-secondary">Download Now</a>
+				</div>
+			</div>
+		</section>
+		]]></content:encoded>
+	</item>
+
+</channel>
+</rss>
